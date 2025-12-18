@@ -62,7 +62,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           </p>
 
           <div className="flex items-center justify-between mt-auto">
-            <p className="text-2xl font-bold text-primary">${product.price}</p>
+            <p className="text-2xl font-bold text-primary">Rs. {product.price}</p>
             <Button
               onClick={handleAddToCart}
               size="icon"

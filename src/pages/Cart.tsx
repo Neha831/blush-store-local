@@ -89,7 +89,7 @@ const Cart = () => {
                     <div>
                       <p className="text-xs text-muted-foreground mb-1">{item.category}</p>
                       <h3 className="font-semibold text-lg mb-2">{item.name}</h3>
-                      <p className="text-lg font-bold text-primary">${item.price}</p>
+                      <p className="text-lg font-bold text-primary">Rs. {item.price}</p>
                     </div>
 
                     <div className="flex items-center gap-6">

@@ -17,7 +17,7 @@ const Shop = () => {
     const allProducts = getProducts();
     setProducts(allProducts);
     setFilteredProducts(allProducts);
-    
+
     // Calculate max price
     const max = Math.max(...allProducts.map(p => p.price), 100);
     setMaxPrice(Math.ceil(max));
@@ -78,7 +78,7 @@ const Shop = () => {
 
               <div>
                 <Label className="text-sm font-medium mb-3 block">
-                  Price Range: ${priceRange[0]} - ${priceRange[1]}
+                  Price Range: Rs. {priceRange[0]} - Rs. {priceRange[1]}
                 </Label>
                 <Slider
                   min={0}
@@ -89,6 +89,7 @@ const Shop = () => {
                   className="mt-4"
                 />
               </div>
+
             </div>
           </aside>
 

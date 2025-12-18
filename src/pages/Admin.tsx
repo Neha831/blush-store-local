@@ -205,7 +205,8 @@ const Admin = () => {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="price">Price ($)</Label>
+                    <Label htmlFor="price">
+                       (Rs.)</Label>
                     <Input
                       id="price"
                       type="number"
@@ -327,7 +328,7 @@ const Admin = () => {
                   </TableCell>
                   <TableCell className="font-medium">{product.name}</TableCell>
                   <TableCell>{product.category}</TableCell>
-                  <TableCell>${product.price}</TableCell>
+                  <TableCell>Rs. {product.price}</TableCell>
                   <TableCell>{product.stock}</TableCell>
                   <TableCell>{product.featured ? '⭐' : '-'}</TableCell>
                   <TableCell>
