@@ -31,15 +31,14 @@ const Home = () => {
           modules={[Pagination, Navigation, Autoplay]}
           pagination={{ clickable: true }}
           navigation={true}
-          autoplay={{ delay: 10000 }}
+          autoplay={{ delay: 6000 }}
           loop={true}
           slidesPerView={1}
           className="w-full h-full"
         >
           {/*  Slide 1 */}
-         
 
-{/*  Slide 2*/}
+
           <SwiperSlide>
             <div
               className="h-full bg-cover bg-center flex items-center justify-center"
@@ -62,9 +61,9 @@ const Home = () => {
             </div>
           </SwiperSlide>
 
-      
 
-          {/* Slide 3 */}
+          {/*  Slide 2*/}
+
 
           <SwiperSlide>
             <div className="relative w-full h-screen overflow-hidden">
@@ -102,11 +101,11 @@ const Home = () => {
 
             </div>
           </SwiperSlide>
-       
 
 
+          {/* Slide 3 */}
 
-             <SwiperSlide>
+          <SwiperSlide>
             <div
               className="h-full bg-cover bg-center flex items-center justify-center"
               style={{ backgroundImage: "url('/images/per16.jpg')" }}
@@ -127,7 +126,7 @@ const Home = () => {
               </div>
             </div>
           </SwiperSlide>
-           </Swiper>
+        </Swiper>
       </section>
 
       {/*  Featured Products */}
